@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dalhousie CS Chatrooms</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <img
+            src="images/dal-logo.png"
+            alt="Dalhousie University Logo"
+            onerror="this.src='https://cdn.dal.ca/content/dam/dalhousie/images/dept/communicationsandmarketing/01%20DAL%20FullMark-Blk.jpg'; this.onerror=null;"
+          />
+        </div>
+        <h1>Dalhousie CS Chatrooms</h1>
+        <div class="user-info">
+          Welcome, <span id="current-user">User</span>!
+          <button id="logout-btn" class="btn btn-small">Logout</button>
+        </div>
+      </header>
+
+      <main>
+        <div class="chatrooms-container">
+          <h2>Available Chatrooms</h2>
+          <div class="chatrooms-list" id="chatrooms-list">
+            <div class="chatroom-card">
+              <h3>CSCI 2690: Intro to Software Projects</h3>
+              <p>
+                This course will introduce the core elements of project
+                management within the context of software and technology
+                project.
+              </p>
+              <a href="chat.html?room=CSCI2690" class="btn">Join Chatroom</a>
+            </div>
+            <div class="chatroom-card">
+              <h3>CSCI 2691: Introductory Project</h3>
+              <p>
+                In this course, students take on junior roles, learning the
+                fundamentals of professional programming in a team environment.
+              </p>
+              <a href="chat.html?room=CSCI2691" class="btn">Join Chatroom</a>
+            </div>
+            <div class="chatroom-card">
+              <h3>CSCI 3160: Designing User Interfaces</h3>
+              <p>
+                This course deals with concepts and techniques underlying the
+                design of interactive systems.
+              </p>
+              <a href="chat.html?room=CSCI3160" class="btn">Join Chatroom</a>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>
+          &copy; 2025 Dalhousie University Computer Science - Chatroom Project
+        </p>
+      </footer>
+    </div>
+
+    <script src="js/chatrooms.js"></script>
+    <script src="debug.js"></script>
+  </body>
+</html>
